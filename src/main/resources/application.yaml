@@ -1,8 +1,11 @@
+
+#This configuration file connects to our Recipe database in Postgres so that our api can do the proper manipulations
+#such as adding an entry in the table or removing one, or changing one.
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/recipe_db  # Replace with your DB name, username, and password
-    username: your_username       # Your PostgreSQL username
-    password: your_password       # Your PostgreSQL password
+    url: jdbc:postgresql://localhost:5432/postgres  # Replace with your DB name, username, and password
+    username: marwajam       #  PostgreSQL username
+    password: ""       # there is no password
     driver-class-name: org.postgresql.Driver
     hikari:
       pool-name: HikariCP
@@ -10,11 +13,8 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      ddl-auto: update  # You can use 'none', 'create', or 'validate' depending on your needs
+      ddl-auto: update  #
     show-sql: true
     properties:
       hibernate:
         format_sql: true
-  h2:
-    console:
-      enabled: false   # Disable H2 console if you're switching to PostgreSQL
