@@ -83,12 +83,11 @@ Tables**
 
 <h2> Next Steps: To implement </h2>
 
-## Create GraphQL schema 
+**Create GraphQL schema**
 
-## Implement a simple query for fetching ingredients 
+**Implement a simple query for fetching ingredients**
 
-## Implment a simple mutation so you can add, update or delete a recipe from the database 
+**Implment a simple mutation so you can add, update or delete a recipe from the database**
 
-## Add additonal api endpoints to familarize with REST api 
-
-## Write Unit tests to test each part of my code 
+**Add additonal api endpoints to familarize with REST api**
+**Write Unit tests to test each part of my code**
