@@ -1,17 +1,20 @@
-Springboot API that uses GraphQL to create and update the postgres Database that stores Recipes
+To run this application: 
+run **mvn clean install** in terminal and then run the main method in RecipeApiApplication.java located in (Recipe-api/src/main/java/com/example/Recipe_api/RecipeApiApplication.java)
 
 <h1> Recipe API (JAva SpingBoot + GraphQL) </h1>
 
 <h2> Overview:</h2>
+
 This Recipe API is a backend service build with Spring Boot and GraphQL that allows users to:
-    **GET**
-    **CREATE**
-    **UPDATE** 
-    **DELETE** 
+    - GET
+    - CREATE
+    - UPDATE 
+    - DELETE
     Recipes along with their ingredients. 
 
+##
 
-**Goal:** 
+**Goals:** 
 
 - To build a Recipe API database using gtaphql in order to gain knowledge with building 
 Java springboot and GraphQL. 
@@ -38,17 +41,15 @@ Java springboot and GraphQL.
 
 this application will consist of 2 tables in my database:
 
-** Recipe Table **
-**Recipe**
+Tables**
+- **Recipe**
     - id (UUID) - Primary Key
     - name (String)
     - description (String)
     - instructions (Text)
-    - ingredients (One-to-Many Relationship)
+    - ingredients (One-to-Many Relationship to the ingreidents table)
 
-
-** Ingredient Table **
-**Ingredient**
+- **Ingredient**
     - id (UUID) - Primary Key
     - name (String)
     - quantity (String)
